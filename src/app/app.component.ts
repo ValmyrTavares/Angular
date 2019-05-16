@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { RestService } from './services/rest.service';
+import { TodoList } from './models/todolistModel'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'primeiro-projeto';
+  public todoList: TodoList[] = [];
+  public newTodoList: TodoList = new TodoList();
+
+  constructor(public rest: RestService) {
+
+  }
+
+  ngOnInit() {
+    this.rest.request<TodoList[]>("GET", "todolist").then(result => {
+      this.todoList = result;
+      console.log(result)
+    })
+  }
 }

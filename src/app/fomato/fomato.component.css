@@ -1,0 +1,92 @@
+.super-teste{
+    width:110px;
+    height:20px;
+}
+
+.container{
+    display:flex;
+    justify-content:space-around;
+    border:solid 2px black;
+    width: 100%;
+    height:700px;
+    background:rgb(219, 226, 224);
+}
+    
+
+.card{
+    width:300px;
+    height:200px;
+    position: relative;
+    border:solid black 2px;
+    top:100px;
+    left:16px;
+}
+.card h2{
+    color:white;
+    text-align:center;
+    text-shadow: 0 0 4px black;
+}
+.card .entrada-texto{
+    width:160px;
+    height: 30px;
+    position: relative;
+    left:63px;
+    box-Shadow: 2px 2px 5px black;
+}
+.card .att{
+    width:60px;
+    height: 35px;
+    background:rgb(49, 49, 59);
+    position: relative;
+    top:1px;
+    right:-58px;
+}
+   
+.primeiro{
+    background:rgb(161, 161, 120);
+}
+.segundo{
+    background:rgb(99, 64, 64);
+}
+.terceiro{
+    background:rgb(82, 82, 156);
+}
+.botao-editar{
+    background: rgb(153, 66, 66);
+    width: 100px;
+    height:50px;
+    color:black;
+    position:absolute;
+    bottom: 10px;
+    left: 25px;
+    border-radius: 30px;
+    box-Shadow: 2px 2px black;
+    font-size:20px;
+    
+}
+.botao-deletar{
+    background: rgb(121, 89, 89);
+    width: 100px;
+    height:50px;
+    color:black;
+    position:absolute;
+    bottom: 10px;
+    right:25px;
+    border-radius: 30px;
+    border-radius: 30px;
+    box-Shadow: 2px 2px black;
+    font-size:20px;
+}
+.check{
+    width:14px;
+    position:absolute;
+    right:12px;
+    top:8px;
+    margin:0px;
+}
+    
+.container{
+    border:solid 2px black;
+    width: 100%;
+    height:500px;
+}
